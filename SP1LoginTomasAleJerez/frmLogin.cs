@@ -20,7 +20,7 @@ namespace SP1LoginTomasAleJerez
        
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if ((txtUsuario.Text == "Administrador" && txtContraseña.Text == "adm135$") || (txtUsuario.Text == "Operador" && txtContraseña.Text == "ope246$"));
+            if ((txtUsuario.Text == "Administrador" && txtContraseña.Text == "adm135$") || (txtUsuario.Text == "Operador" && txtContraseña.Text == "ope246$"))
             {
                 this.Hide();
                 frmInicio f= new frmInicio();
@@ -39,6 +39,11 @@ namespace SP1LoginTomasAleJerez
                 
                 }
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
